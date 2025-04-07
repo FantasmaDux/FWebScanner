@@ -6,27 +6,20 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ScannerMain {
     public static void main(String[] args) {
-        List<String> url_list = new ArrayList<>();
+        List<String> urlList = new ArrayList<>();
         try {
-            url_list = Files.readAllLines(Path.of("url_files/url_list.txt"));
-            System.out.println(url_list);
+            urlList = Files.readAllLines(Path.of("url_files/url_list.txt"));
+            System.out.println(urlList);
         } catch (IOException e) {
             System.out.println("Нет такого файла");
+            return;
         }
         try {
-            URL url = new URL(url_list.getFirst());
-            HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-
-            int responseCode = httpURLConnection.getResponseCode();
-            System.out.println(responseCode);
-            FileWriter writer = new FileWriter("url_files/connection_log.txt");
-
-            String logMessage = "URL: " + url_list.getFirst() + " CODE: " + responseCode;
-            writer.write(logMessage);
-
-            writer.close();
+            UrlProccessor urlProccessor = new UrlProccessor();
+            urlProccessor.processUrls(urlList);
 
         } catch (IOException e) {
             System.out.println("Internet connection error " + e.toString());
