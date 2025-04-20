@@ -1,1 +1,31 @@
-URL: null CODE: 200
+URL: https://NONEXISTS.com/ CODE: 400 - некорректный запрос
+URL: https://metanit.com/ CODE: 403 - недостаточно прав
+URL: https://www.google.com/ CODE: 200 - успешно
+URL: https://www.apple.com CODE: 200 - успешно
+URL: https://www.microsoft.com CODE: 200 - успешно
+URL: http://httpbin.org/redirect-to?url=http://example.com CODE: 200 - успешно
+URL: https://stackoverflow.com/questions/18134718/java-quickest-way-to-check-if-url-exists CODE: 200 - успешно
+URL: https://www.netflix.com CODE: 403 - недостаточно прав
+URL: https://www.amazon.com CODE: 0 - неизвестный статус
+URL: https://www.nytimes.com CODE: 200 - успешно
+URL: https://www.reddit.com CODE: 200 - успешно
+URL: https://www.tumblr.com CODE: 200 - успешно
+URL: https://www.ebay.com CODE: 200 - успешно
+URL: https://www.stackoverflow.com CODE: 200 - успешно
+URL: https://www.airbnb.com CODE: 200 - успешно
+URL: https://www.spotify.com CODE: 200 - успешно
+URL: https://www.oracle.com CODE: 200 - успешно
+URL: https://www.adobe.com CODE: 200 - успешно
+URL: https://www.yelp.com CODE: 403 - недостаточно прав
+URL: https://www.twitch.tv CODE: 200 - успешно
+URL: https://www.paypal.com CODE: 200 - успешно
+URL: https://www.flickr.com CODE: 200 - успешно
+URL: https://www.dropbox.com CODE: 200 - успешно
+URL: https://www.salesforce.com CODE: 200 - успешно
+URL: https://www.walmart.com CODE: 200 - успешно
+URL: https://www.vimeo.com CODE: 200 - успешно
+URL: https://www.twitter.com CODE: -999 - нет доступа из России
+URL: https://www.linkedin.com CODE: -999 - нет доступа из России
+URL: https://www.quora.com CODE: -999 - нет доступа из России
+URL: https://www.bbc.com CODE: -999 - нет доступа из России
+URL: https://www.medium.com CODE: -999 - нет доступа из России

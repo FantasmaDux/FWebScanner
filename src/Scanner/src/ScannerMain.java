@@ -12,7 +12,6 @@ public class ScannerMain {
         List<String> urlList = new ArrayList<>();
         try {
             urlList = Files.readAllLines(Path.of("url_files/url_list.txt"));
-            System.out.println(urlList);
         } catch (IOException e) {
             System.out.println("Нет такого файла");
             return;
